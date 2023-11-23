@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>html com javascript.</title>
+
+        <style>
+            body {
+                background-color: #696969;
+            }
+            h1 {
+                color: #ffffff;
+                text-align: center;
+                text-shadow: 1px 1px 1px 1px #000, -1px 2px 3px #ff0505, -1px 1px 1px #000, -1px 1px 1px #000;
+            }
+            p {
+                color: #ff0505;
+                text-shadow: 1px 1px 1px #c0c0c0, -1px 1px 1px #ffff, -1px 1px 1px green;
+                font-size: 20px;
+            }
+            #Text {
+                background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+                border: 1px solid #696969;
+                padding: 10px;
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 1px black;
+                margin: 5%;
+            }
+            #box1 {
+                background: linear-gradient(to bottom, #ffe8d4, #f63c3c);
+                border: 1px solid #696969;
+                padding: 1px;
+                border-radius: 10px;
+                width: 300px;
+                margin: 50px;
+                box-shadow: 2px 2px 1px black;
+            }
+            #output{
+                background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+                text-align: center;
+                border: 1px solid #696969;
+                padding: 1px;
+                border-radius: 10px;
+                width: 300px;
+                margin: 50px;
+                box-shadow: 2px 2px 1px black;
+            }
+            p {
+                color: rgb(0, 0, 0);
+                text-align: center;
+                text-shadow: 1px 2px 3px #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Esté São elementos em javascript.</h1>
+        <div id="box1">
+            <p>Está é uma box 1 {Box1}</p>
+        </div>
+        <div id="Text">
+            <h1>Hello world 2 {Text}</h1>
+        </div>
+        <div id="output">
+            <h2>Este é uma programa javascript. 3 {Output}</h2>
+        </div>
+        <script>
+            var outputDiv = document.getElementById("output");
+            var box1 = document.getElementById("box1");
+            var Text = document.getElementByIld("Text");
+
+            outputDiv.innerHTML = "Éste é um programa em javascript";
+            Text.innerHTML = "Esta é uma text";
+          
+        </script>
+    </body>
+</html>
