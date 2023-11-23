@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 02.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="dynamicText"></h1>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dinamicText = document.getElementById("dinamicText");
+
+            dynamicText.textContent ="Veja Exemplo 2:";
+            dynamicText.innerHTML = 'Hello,<br>World!<br>This is a new line.';
+        });
+        </script>
+        <a href="pagina3.html"><h2>Página</h2></a>
+</body>
+</html>
